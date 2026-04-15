@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Club Tech Store</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: plum;
+    }
+
+    header {
+      background: wheat;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    header a {
+      color: darkgreen;
+      text-decoration: none;
+      margin: 20px;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 25px;
+      color: darkred;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 10% 50px;
+    }
+
+    .card {
+      background: whitesmoke;
+      padding: 25px;
+      text-align: center;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">Home</a>
+  <nav>
+    <a href="https://www.apple.com/">iPhone</a>
+    <a href="https://www.apple.com/">iPad</a>
+    <a href="https://www.apple.com/">Macbook</a>
+    <a href="https://www.apple.com/">Watch</a>
+  </nav>
+</header>
+
+<h1>Prime Club Tech Store</h1>
+
+<div class="product-grid">
+
+  <div class="card">
+    <img src="images/iphone.jpg" alt="iPhone">
+  </div>
+
+  <div class="card">
+    <img src="images/ipad.jpg" alt="iPad">
+  </div>
+
+  <div class="card">
+    <img src="images/macbook.jpg" alt="MacBook">
+  </div>
+
+  <div class="card">
+    <img src="images/airpod.jpg" alt="AirPods">
+  </div>
+
+  <div class="card">
+    <img src="images/watch.jpg" alt="Apple Watch">
+  </div>
+
+</div>
+
+</body>
+</html>
